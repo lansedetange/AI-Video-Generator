@@ -67,13 +67,12 @@ export const websiteConfig: WebsiteConfig = {
     relatedPostsSize: 3,
   },
   mail: {
-    provider: 'resend',
-    fromEmail: 'MkSaaS <support@mksaas.com>',
-    supportEmail: 'MkSaaS <support@mksaas.com>',
+    provider: 'resend', // Email provider to use
+    supportEmail: 'contact@example.com', // Default sender and recipient email address
   },
   newsletter: {
-    provider: 'resend',
-    autoSubscribeAfterSignUp: true,
+    provider: 'resend', // Newsletter provider to use
+    autoSubscribeAfterSignUp: false, // Whether to automatically subscribe users after sign up
   },
   storage: {
     provider: 's3',
